@@ -126,8 +126,6 @@ const DivStyledTooltipParent = styled.div`
 const showOnHoverStyles = css`
     opacity: 1;
     visibility: visible;
-    transition: 0.5s;
-    transition-delay: 0.1s;
 `;
 
 const DivStyled = styled.div<IStyledHoverSpan>`
@@ -136,6 +134,8 @@ const DivStyled = styled.div<IStyledHoverSpan>`
     opacity: 0;
     position: absolute;
     visibility: hidden;
+    transition: 0.5s;
+    transition-delay: 0.1s;
     z-index: 1;
     ${({ position }) => getPopoverComp[position]};
 
